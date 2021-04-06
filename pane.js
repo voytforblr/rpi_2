@@ -4,6 +4,7 @@ let array=["Slide1","Slide2","Slide3","Slide4","Slide5"];
 counter=1;
 //флаг появления окна
 let flag=1;
+localStorage.setItem("flag",String(1))
 flag=Number(localStorage.getItem("flag"));
 //инициализация окна
 if (flag){
@@ -65,6 +66,7 @@ function addContent(divSlider,divPanel){
     aRightArrow.innerHTML="&#10095;";
     divPanel.appendChild(aRightArrow)
 }
+
 //функция добавления конкретного слайда
 function addSlide(sliderText,divSlider,divPanel){
     let newDiv=document.createElement("div");
