@@ -4,7 +4,7 @@ let array=["Slide1","Slide2","Slide3","Slide4","Slide5"];
 counter=1;
 //флаг появления окна
 let flag=1;
-localStorage.setItem("flag",String(1))
+
 flag=Number(localStorage.getItem("flag"));
 //инициализация окна
 if (flag){
